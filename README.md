@@ -44,12 +44,10 @@ No build system integration required.
 #include "ease.h"
 
 int main() {
-    using namespace CZ;
-
     double t = 0.3; // normalized time
 
-    double v1 = CZEase::inQuad(t);    // ease-in quadratic
-    double v2 = CZEase::outBounce(t); // ease-out bounce
+    double v1 = Ease::inQuad(t);    // ease-in quadratic
+    double v2 = Ease::outBounce(t); // ease-out bounce
 
     std::cout << "inQuad(0.3)   = " << v1 << "\n";
     std::cout << "outBounce(0.3)= " << v2 << "\n";
